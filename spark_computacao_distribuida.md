@@ -96,6 +96,10 @@ streaming usando um único mecanismo de execução e um conjunto padrão de APIs
 
 **Executors → Executam Tarefas → Enviam Resultados ao Driver**
 
+## Arquitetura de Processadores
+
+Antes de entender sobre o funcionamento de um cluster, é necessário entender a arquitetura e os componentes de um processador.
+
 ## E o Cluster?
 
 Um cluster é um grupo de computadores (ou nós) interconectados que trabalham juntos para realizar tarefas como se fossem uma única unidade. Em um cluster, os computadores
