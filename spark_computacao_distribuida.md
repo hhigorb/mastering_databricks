@@ -4,15 +4,19 @@ O Apache Spark é um mecanismo de análise unificado e extremamente rápido para
 
 O Spark é uma plataforma de processamento de dados distribuídos. Isso significa que ele divide grandes conjuntos de dados em partes menores e as processa em paralelo, o que torna o processamento muito mais rápido.
 
-O Spark foi desenvolvido desde o início para solucionar as deficiências do Hadoop. O Hadoop era lento e ineficiente para trabalhos de computação interativos e iterativos, além de ser muito complexo para aprender e desenvolver. 
-Por outro lado, o Spark oferece APIs muito mais simples, rápidas e fáceis de desenvolver.
+Uma das principais inovações do Spark é sua capacidade de realizar o processamento de dados em memória. Diferentemente do Hadoop MapReduce, que grava intermediários em disco, o Spark armazena dados na memória RAM sempre que possível. Esse armazenamento em memória reduz significativamente o tempo de leitura e gravação, permitindo que o Spark execute operações até 100 vezes mais rápido em comparação com o Hadoop para muitos tipos de cargas de trabalho.
+
+O Spark organiza seus dados em estruturas chamadas Resilient Distributed Datasets (RDDs). Os RDDs são particionados em várias máquinas no cluster e podem ser mantidos na memória durante toda a execução de uma aplicação, o que acelera consideravelmente a execução de tarefas iterativas e interativas.
+
+Além do processamento em memória, o Spark utiliza um modelo de computação baseado em transformações e ações. As transformações criam novos RDDs a partir dos existentes, enquanto as ações desencadeiam a execução dos cálculos. O Spark usa um plano de execução otimizado para minimizar o custo computacional e reduzir a necessidade de comunicação entre nós.
+
+O Spark foi desenvolvido desde o início para solucionar as deficiências do Hadoop. O Hadoop era lento e ineficiente para trabalhos de computação interativos e iterativos, além de ser muito complexo para aprender e desenvolver. Por outro lado, o Spark oferece APIs muito mais simples, rápidas e fáceis de desenvolver.
 
 O Spark pode ser 100 vezes mais rápido que o Hadoop para processamento de dados em grande escala, explorando a computação na memória e outras otimizações.
 
 Semelhante à maioria dos outros mecanismos de Big Data, o Spark é executado em uma plataforma de computação distribuída.
 
-O Spark tem um mecanismo unificado para suportar cargas de trabalho variadas. Por exemplo, ele usa um único mecanismo para cargas de trabalho de streaming e em lote. Ele vem com bibliotecas de alto nível, incluindo
-suporte para consultas SQL, dados de streaming, aprendizado de máquina e processamento de gráficos. Essas bibliotecas padrão aumentam a produtividade do desenvolvedor e podem ser perfeitamente combinadas para criar fluxos de trabalho complexos.
+O Spark tem um mecanismo unificado para suportar cargas de trabalho variadas. Por exemplo, ele usa um único mecanismo para cargas de trabalho de streaming e em lote. Ele vem com bibliotecas de alto nível, incluindo suporte para consultas SQL, dados de streaming, aprendizado de máquina e processamento de gráficos. Essas bibliotecas padrão aumentam a produtividade do desenvolvedor e podem ser perfeitamente combinadas para criar fluxos de trabalho complexos.
 
 ## Arquitetura do Spark
 
